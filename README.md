@@ -8,6 +8,6 @@ It is a website which help to find find movies buils with react and tailwind CSS
 
 -It has a modal feature build with react model library to show other data about movie like overview, rating, release date etc.
 
--It's all done by TMDB(The Movie Data Base) API.
+-It's all done by TMDB(The Movie Data Base) API gor movies and movie posters.
 
 It was fun assignment to do thanks to UniAcco team looking forward to more future opportunities!
