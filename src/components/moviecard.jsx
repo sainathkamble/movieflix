@@ -22,7 +22,7 @@ export const MovieCard = (props) => {
   };
 
   return (
-    <div className="h-full w-full bg-slate-950 rounded-lg p-4 grid gap-4 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4">
+    <div className="h-full w-full bg-gray-900 rounded-lg p-4 grid gap-4 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4">
       {movies.map((movie) => {
         return (
           <div className="h-auto w-full bg-slate-800 border rounded-lg" key={movie.id}>

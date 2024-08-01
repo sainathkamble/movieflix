@@ -2,6 +2,7 @@ import "../global.css";
 import { useState , useEffect } from "react";
 import { MovieCard } from "./moviecard.jsx";
 import { MoviesList } from "./movieslist.jsx";
+import { ApiKey } from "../constants.js";
 
 export const SearchBar = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -12,7 +13,7 @@ export const SearchBar = () => {
   async function searchMovie(query) {
     try {
       const response = await fetch(
-        `https://api.themoviedb.org/3/search/movie?api_key=fb60f70ab8f6a810a3873a54902d5f85&query=${query}`
+        `https://api.themoviedb.org/3/search/movie?api_key=${ApiKey}&query=${query}`
       );
 
       if (response.ok) {
@@ -46,8 +47,8 @@ export const SearchBar = () => {
   }
 
   return (
-    <div className="h-full w-full bg-slate-950">
-      <div className="h-full w-full p-4 grid grid-cols-1 grid-rows-2 place-items-center">
+    <div className="h-full w-full bg-gray-950">
+      <div className="h-auto w-full p-4 bg-gray-950 grid grid-cols-1 grid-rows-2 place-items-center">
         <p className="h-auto w-auto text-white text-2xl">UniAcco Frontend Intenship Assignment</p>
         <input type="text" placeholder="Search"
           onChange={handleSearch} value={searchQuery}

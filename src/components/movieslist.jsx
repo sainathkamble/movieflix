@@ -2,9 +2,11 @@ import "../global.css";
 import Modal from "react-modal";
 import { useEffect, useState , useCallback } from "react";
 import { ModalCompo } from "./Modal.jsx";
+import { ApiKey } from "../constants.js";
 
 Modal.setAppElement("#root");
 
+//Default movie list 
 export const MoviesList = () => {
 
 const [movies, setMovies] = useState([]);
@@ -16,7 +18,7 @@ const [selectedMovie, setSelectedMovie] = useState(null);
 //fetch movies default movies
   const getMovies = async (page) => {
     try{
-      const response = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=fb60f70ab8f6a810a3873a54902d5f85&page=${page}`,
+      const response = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${ApiKey}&page=${page}`,
         { headers: { "Content-type": "application/json", }, method: "GET",}
       );
       const data = await response.json();
@@ -55,10 +57,10 @@ const [selectedMovie, setSelectedMovie] = useState(null);
   };
 
   return (
-    <div className="h-full w-full bg-slate-950 rounded-lg p-4 grid gap-4 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4">
+    <div className="h-full w-full bg-slate-900 rounded-lg p-4 grid gap-4 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4">
       {movies.map((movie) => {
         return (
-          <div className="h-auto w-full bg-slate-800 border rounded-lg" key={movie.id}>
+          <div className="h-auto w-full bg-gray-950 border rounded-lg" key={movie.id}>
 
             <img className="h-auto w-auto rounded-t-lg"
               src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}

@@ -18,7 +18,7 @@ export const ModalCompo = (props) => {
               className="h-full w-full p-10"
             >
     
-            <div className="h-full w-full bg-slate-800 border rounded-lg p-4 grid grid-cols-1 grid-rows-2 overflow-y-scroll
+            <div className="h-full w-full bg-gray-950 border rounded-lg p-4 grid grid-cols-1 grid-rows-2 overflow-y-scroll
             sm:grid-cols-1 sm:grid-rows-2 md:grid-cols-2 md:grid-rows-1 lg:grid-cols-2 lg:grid-rows-1 xl:grid-cols-2 xl:grid-rows-1 2xl:grid-cols-2 2xl:grid-rows-1">
               
               <div className="h-full w-full flex just-fy-center items-center">
@@ -39,7 +39,7 @@ export const ModalCompo = (props) => {
                 <p className="h-auto w-full m-4 text-white">Popularity: {selectedMovie.popularity}</p>
     
                 <div className="h-auto w-full flex justify-center items-center">
-                  <button onClick={closeModal} className="h-auto w-1/2 m-4 text-white hover:bg-slate-700 rounded-xl text-2xl font-semibold">Close</button>
+                  <button onClick={closeModal} className="h-auto w-auto px-4 py-2 m-4 text-white bg-slate-700 rounded-xl text-2xl font-semibold">Close</button>
                 </div>
               </div>
             </div>
