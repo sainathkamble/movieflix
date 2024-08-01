@@ -1,8 +1,13 @@
-# React + Vite
+# UniAcco Frontend Internship Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+It is a website which help to find find movies buils with react and tailwind CSS.
 
-Currently, two official plugins are available:
+-It has serach bar option for searching movies.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-Infinte scroll feature which fetched data automatically as you reach bottom of the page.
+
+-It has a modal feature build with react model library to show other data about movie like overview, rating, release date etc.
+
+-It's all done by TMDB(The Movie Data Base) API.
+
+It was fun assignment to do thanks to UniAcco team looking forward to more future opportunities!
